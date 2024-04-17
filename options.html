@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>WideGPT Settings</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/extension.css" />
+  <link rel="stylesheet" type="text/css" href="css/options.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <div class="wrapper">
+    <img src="images/widegptlogo.png" alt="WideGPT" id="logo" ;>
+    <form style="width:300px;margin:auto">
+      <label class="instructions">Use the slider to set the percentage of screen width ChatGPT uses.</label>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="100" value="80" class="slider" id="widthSlider">
+      </div>
+    </form>
+
+    <div class="chatWindow" id="chatWindow">
+      <div class="chatInner" id="chatInner">
+        <label id="output">80</label>
+      </div>
+    </div>
+    <label class="footer">Made by Chris Stone</label>
+  </div>
+  <script src="js/options.js"></script>
+</body>
+
+</html>

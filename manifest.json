@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "WideGPT",
+  "version": "1.14",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "description": "Widens the answer area for Chat GPT. Made by Chris Stone.",
+  "icons": {
+    "48": "images/widegpt.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.openai.com/*"
+      ],
+      "css": [
+        "css/override.css"
+      ],
+      "js": [
+        "js/jquery-3.7.1.min.js",
+        "js/widegpt.js"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "widegpt@cstone"
+    }
+  },
+  "web_accessible_resources": [
+    "images/widegpt.png",
+    "slider.html"
+  ]
+}

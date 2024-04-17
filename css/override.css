@@ -1,0 +1,17 @@
+:root{
+    --width:100%;
+}
+.xl\:max-w-3xl {  max-width:var(--width) }
+.md\:max-w-3xl {  max-width:var(--width) }
+.gizmo .gizmo\:md\:max-w-3xl{  max-width:var(--width) }
+.gizmo .gizmo\:xl\:max-w-\[48rem\]{  max-width:var(--width) }
+
+#widthSlider {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+input[type="range"] {
+    accent-color: #0FA180;
+}
