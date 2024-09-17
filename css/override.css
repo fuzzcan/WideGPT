@@ -7,9 +7,23 @@
 .gizmo .gizmo\:xl\:max-w-\[48rem\]{  max-width:var(--width) }
 
 #widthSlider {
-    width: 100%;
-    display: block;
     margin: auto;
+}
+
+#sliderHolder{
+    width: 100%;
+    top:0;
+    height:56px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidecontainer{
+    display: flex;
+    align-items: center;
 }
 
 input[type="range"] {

@@ -1,19 +1,20 @@
 {
   "manifest_version": 2,
   "name": "WideGPT",
-  "version": "1.14",
+  "version": "1.16",
   "permissions": [
     "activeTab",
+    "tabs",
     "storage"
   ],
-  "description": "Widens the answer area for Chat GPT. Made by Chris Stone.",
+  "description": "Widens the answer area for ChatGPT. Made by Chris Stone.",
   "icons": {
     "48": "images/widegpt.png"
   },
   "content_scripts": [
     {
       "matches": [
-        "*://*.openai.com/*"
+        "*://*.chatgpt.com/*"
       ],
       "css": [
         "css/override.css"
