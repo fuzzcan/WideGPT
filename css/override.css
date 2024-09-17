@@ -20,11 +20,14 @@
     justify-content: center;
     align-items: center;
     pointer-events:none;
+    top:0;
+    z-index:999999999;
 }
 
 .slidecontainer{
     display: flex;
     align-items: center;
+    pointer-events: all;
 }
 
 input[type="range"] {

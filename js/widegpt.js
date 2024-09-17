@@ -3,13 +3,10 @@ $(document).ready(
     async function InitSlider() {
 
         console.log("widegpt loaded");
-        //$("div.pb-2:nth-child(1) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > ol").html('<li class="relative"><div class="slidecontainer p-3"><input type="range" min="10" max="100" value="80" class="slider" id="widthSlider"></div></li>');
-        var tries = 0;
-        var maxTries = 300;
 
+        await sleep(1000);
 
-
-        $("body").append("<div id='sliderHolder'></div>");
+        $("main").prepend("<div id='sliderHolder'></div>");
         var sliderUrl = browser.runtime.getURL("slider.html");
         console.log("slider url: " + sliderUrl);
         $("#sliderHolder").load(sliderUrl, function () {
